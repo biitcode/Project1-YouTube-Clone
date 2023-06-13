@@ -1,0 +1,120 @@
+.thumbnails{
+  width: 100%;
+}
+.video-title{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.video-author,
+.video-stats{
+  font-weight: 400;
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+.video-stats{
+  margin-top: 4.5px;
+}
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  column-gap: 8px;
+}
+
+
+
+.channel-picture .whole-tooltip{
+  position: absolute;
+  background-color: lightgray;
+  top: 45px;
+  width: 190px;
+  height: 63px;
+  padding-left: 10px;
+  padding-right: 15px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
+}
+.channel-picture:hover .whole-tooltip{
+  opacity: 1;
+}
+.profile-picture-tooltip{
+  width: 50px;
+  border-radius: 50%;
+}
+.name-tooltip{
+  font-family: Roboto, Arial;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.stats-tooltip{
+  font-family: Roboto, Arial;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+}
+.channel-picture{
+  display: inline-block;
+  position: relative;
+  width: 40px;
+}
+.profile-picture{
+  width: 36px;
+  border-radius: 50%;
+}
+.video-info{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.thumbnail-row{
+  margin-bottom: 8px;
+  position: relative;
+}
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 17px;
+  row-gap: 40px;
+}
+
+@media (min-width: 500px) and (max-width: 810px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width : 811px) and (max-width: 1200px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+
+.video-time{
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 11px;
+  right: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+}
+.channel-link{
+  text-decoration: none;
+  color: inherit;
+}
+.video-link{
+  text-decoration: none;
+  color: black;
+}
